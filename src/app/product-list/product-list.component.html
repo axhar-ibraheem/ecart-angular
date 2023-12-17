@@ -1,0 +1,32 @@
+<div class="ecart-product-container">
+  <!--<img class="product-img" [src]="product.pImage" alt="an iphone image" />-->
+  <!--<p>Name: {{ product.name }}</p>-->
+  <!--<p>Price: ${{ product.price }}</p>-->
+  <!--<p>Color: {{ product.color }}</p>-->
+
+  <!--<p>Discounted Price: {{ getDiscountedPrice().toFixed(2) }}</p>-->
+  <!--<p>-->
+  <!--  {{-->
+  <!--    product.inStock > 0 ? "only " + product.inStock + " left" : "out of stock"-->
+  <!--  }}-->
+  <!--</p>-->
+  <!--<button [disabled]="product.inStock <= 0" class="btn">Buy Now</button>-->
+  <!--<input type="text" [attr.aria-hidden]="" (input)="onNameChange($event)" />-->
+  <!--<button class="plus-btn" (click)="incrementValue()">+</button>-->
+  <!--<span>{{ addToCart }}</span>-->
+  <!--<button-->
+  <!--  class="minus-btn"-->
+  <!--  [disabled]="addToCart === 0"-->
+  <!--  (click)="decrementValue()"-->
+  <!--&gt;-->
+  <!--  - -->
+  <!--</button>-->
+  <!--&lt;!&ndash; [value] or bind-value&ndash;&gt;-->
+  <!--<p>name: {{ name }}</p>-->
+
+  <app-search></app-search>
+  <!--  <div *ngFor="let item of listOfItems">-->
+  <!--    <p>list item is: {{ item }}</p>-->
+  <!--  </div>-->
+  <app-product-items *ngFor="let product of products" [product]="product" />
+</div>

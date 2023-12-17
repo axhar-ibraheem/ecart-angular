@@ -1,0 +1,32 @@
+.product-img {
+  width: 15rem;
+  height: 100%;
+}
+
+.btn {
+  cursor: pointer;
+  background: #080043;
+  border: 0px solid #ccc;
+  border-radius: 31px;
+  padding: 9px 20px;
+  font-size: 1rem;
+  color: #ffffff;
+  box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.77);
+}
+.plus-btn {
+  padding: 3px 8px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+.minus-btn {
+  padding: 3px 8px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+.ecart-product-container {
+  margin: 20px auto;
+  width: 90vw;
+  max-width: 1170px;
+  display: flex;
+  flex-wrap: wrap;
+}
