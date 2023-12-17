@@ -184,6 +184,8 @@ export class ProductListComponent {
       slug: 'nike-air-force-1',
     },
   ];
+  totalProducts: number = this.products.length;
+  totalProductsInStock = this.products.filter((prod) => prod.is_in_inventory);
   // name: string = 'Azhar Ibraheem';
   // addToCart: number = 0;
   // product = {
