@@ -6,14 +6,14 @@
     [ngClass]="{
       btn: true,
       'btn-search': searchText,
-      'btn-search-disabled': !searchText
+      'btn-search-disabled': !searchText.trim()
     }"
   >
     Search
   </button>
 </div>
 <div class="ekart-search-result-for">
-  <p *ngIf="!!searchText">
+  <p *ngIf="!!searchText.trim()">
     <strong>Search result for:</strong> {{ searchText }}
   </p>
 </div>

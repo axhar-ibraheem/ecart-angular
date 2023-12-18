@@ -186,7 +186,14 @@ export class ProductListComponent {
   ];
   totalProducts: number = this.products.length;
   totalProductsInStock = this.products.filter((prod) => prod.is_in_inventory);
-  // name: string = 'Azhar Ibraheem';
+  selectedRadioButton: string = 'all';
+  onFilterChange(value: string): void {
+    console.log('onFilterChange Called');
+    console.log('Value : ', value);
+    this.selectedRadioButton = value;
+  }
+
+  // name: string = 'Azar Ibraheem';
   // addToCart: number = 0;
   // product = {
   //   name: 'Iphone X',
